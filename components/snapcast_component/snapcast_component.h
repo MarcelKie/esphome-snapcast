@@ -3,9 +3,9 @@
 #include "esphome/core/component.h"
 
 namespace esphome {
-namespace empty_component {
+namespace snapcast {
 
-class EmptyComponent : public Component {
+class snapcast : public Component {
  public:
   void setup() override;
   void loop() override;
