@@ -3,7 +3,7 @@ import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
 snapcast_ns = cg.esphome_ns.namespace("snapcast")
-snapcast = snapcast_ns.class_("SnapCast", cg.Component)
+snapcast = snapcast_ns.class_("snapcast", cg.Component)
 
 CONFIG_SCHEMA = cv.Schema(
     {
