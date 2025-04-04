@@ -13,5 +13,5 @@ class snapcast : public Component {
 };
 
 
-}  // namespace empty_component
+}  // namespace snapcast
 }  // namespace esphome
