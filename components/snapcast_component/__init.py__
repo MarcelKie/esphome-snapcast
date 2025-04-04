@@ -2,12 +2,12 @@ import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
-snapcast_component_ns = cg.esphome_ns.namespace("snapcast_component")
-SnapcastComponent = snapcast_component_ns.class_("SnapcastComponent", cg.Component)
+snapcast_ns = cg.esphome_ns.namespace("snapcast")
+snapcast = snapcast_ns.class_("SnapCast", cg.Component)
 
 CONFIG_SCHEMA = cv.Schema(
     {
-        cv.GenerateID(): cv.declare_id(EmptyComponent),
+        cv.GenerateID(): cv.declare_id(snapcast),
     }
 ).extend(cv.COMPONENT_SCHEMA)
 
